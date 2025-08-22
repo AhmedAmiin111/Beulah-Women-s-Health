@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 nextSlide();
                 console.log('Auto-advancing to next slide');
             }
-        }, 5000); // Show next slide every 5 seconds (reduced from 7 seconds)
+        }, 8000); // Show next slide every 5 seconds (reduced from 7 seconds)
         
         console.log('Autoplay started');
     }
