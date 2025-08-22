@@ -1464,9 +1464,9 @@ nav {
     }
 }
 
-.hero-image {
+/* .hero-image {
     animation: float 4s ease-in-out infinite;
-}
+} */
 
 .book-btn {
     animation: pulse 2s ease-in-out infinite;
