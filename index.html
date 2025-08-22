@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Beulah Women's Health</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Pink White Minimalist Modern Women's Club Logo (2) (1).png">
+    <!-- IntakeQ EMR Booking Widget Script -->
+    <!-- <script>
+        function loadIntakeQWidget() {
+            if (!window.intakeqLoaded) {
+                window.intakeq = "68942b27871e9c0cab101216";
+                var i = document.createElement("script");
+                i.type = "text/javascript";
+                i.async = true;
+                i.src = "https://intakeq.com/js/widget.min.js?1";
+                document.head.appendChild(i);
+                window.intakeqLoaded = true;
+            }
+            
+            // Show the booking modal
+            if (document.getElementById('booking-modal')) {
+                document.getElementById('booking-modal').style.display = 'flex';
+            } else {
+                // Create modal if it doesn't exist
+                createBookingModal();
+            }
+        }
+        
+        function createBookingModal() {
+            // Create modal container
+            const modal = document.createElement('div');
+            modal.id = 'booking-modal';
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0,0,0,0.7)';
+            modal.style.zIndex = '1000';
+            modal.style.display = 'flex';
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+            
+            // Create modal content
+            const modalContent = document.createElement('div');
+            modalContent.style.backgroundColor = '#fff';
+            modalContent.style.borderRadius = '8px';
+            modalContent.style.padding = '20px';
+            modalContent.style.width = '90%';
+            modalContent.style.maxWidth = '720px';
+            modalContent.style.maxHeight = '90vh';
+            modalContent.style.overflow = 'auto';
+            modalContent.style.position = 'relative';
+            
+            // Close button
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '&times;';
+            closeBtn.style.position = 'absolute';
+            closeBtn.style.right = '10px';
+            closeBtn.style.top = '10px';
+            closeBtn.style.border = 'none';
+            closeBtn.style.background = 'none';
+            closeBtn.style.fontSize = '24px';
+            closeBtn.style.cursor = 'pointer';
+            closeBtn.style.color = '#6b5b95';
+            closeBtn.onclick = function() {
+                document.getElementById('booking-modal').style.display = 'none';
+            };
+            
+            // IntakeQ container
+            const intakeqDiv = document.createElement('div');
+            intakeqDiv.id = 'intakeq';
+            intakeqDiv.style.width = '100%';
+            intakeqDiv.style.maxWidth = '720px';
+            
+            // Add elements to DOM
+            modalContent.appendChild(closeBtn);
+            modalContent.appendChild(intakeqDiv);
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+            
+            // Close when clicking outside the modal content
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+    </script> -->
+    <!-- <script>
+        function loadIntakeQWidget() {
+            // Create modal first
+            if (!document.getElementById('booking-modal')) {
+                createBookingModal();
+            }
+            
+            // Show the booking modal
+            document.getElementById('booking-modal').style.display = 'flex';
+            
+            // Load IntakeQ widget if not already loaded
+            if (!window.intakeqLoaded) {
+                window.intakeq = "68942b27871e9c0cab101216";
+                var i = document.createElement("script");
+                i.type = "text/javascript";
+                i.async = true;
+                i.src = "https://intakeq.com/js/widget.min.js?1";
+                
+                // Add onload event to initialize widget after script loads
+                i.onload = function() {
+                    // IntakeQ widget should automatically initialize when script loads
+                    // The widget will look for elements with id="intakeq"
+                };
+                
+                document.head.appendChild(i);
+                window.intakeqLoaded = true;
+            }
+        }
+        
+        function createBookingModal() {
+            // Create modal container
+            const modal = document.createElement('div');
+            modal.id = 'booking-modal';
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0,0,0,0.7)';
+            modal.style.zIndex = '1000';
+            modal.style.display = 'none'; // Start hidden
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+            
+            // Create modal content
+            const modalContent = document.createElement('div');
+            modalContent.style.backgroundColor = '#fff';
+            modalContent.style.borderRadius = '8px';
+            modalContent.style.padding = '20px';
+            modalContent.style.width = '90%';
+            modalContent.style.maxWidth = '720px';
+            modalContent.style.maxHeight = '90vh';
+            modalContent.style.overflow = 'auto';
+            modalContent.style.position = 'relative';
+            
+            // Close button
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '&times;';
+            closeBtn.style.position = 'absolute';
+            closeBtn.style.right = '10px';
+            closeBtn.style.top = '10px';
+            closeBtn.style.border = 'none';
+            closeBtn.style.background = 'none';
+            closeBtn.style.fontSize = '24px';
+            closeBtn.style.cursor = 'pointer';
+            closeBtn.style.color = '#6b5b95';
+            closeBtn.onclick = function() {
+                document.getElementById('booking-modal').style.display = 'none';
+            };
+            
+            // IntakeQ container (matching your EMR system requirements)
+            const intakeqDiv = document.createElement('div');
+            intakeqDiv.id = 'intakeq';
+            intakeqDiv.style.maxWidth = '720px';
+            intakeqDiv.style.width = '100%';
+            
+            // Add elements to DOM
+            modalContent.appendChild(closeBtn);
+            modalContent.appendChild(intakeqDiv);
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+            
+            // Close when clicking outside the modal content
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+        
+        // Alternative approach: Load IntakeQ immediately when page loads
+        // This ensures the widget is ready when the modal opens
+        function initializeIntakeQ() {
+            if (!window.intakeqLoaded) {
+                (function (c) {
+                    window.intakeq = "68942b27871e9c0cab101216"; 
+                    var i = c.createElement("script");
+                    i.type = "text/javascript";
+                    i.async = true;
+                    i.src = "https://intakeq.com/js/widget.min.js?1";
+                    document.head.appendChild(i);
+                    window.intakeqLoaded = true;
+                })(document);
+            }
+        }
+        
+        // Initialize IntakeQ when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeIntakeQ);
+        } else {
+            initializeIntakeQ();
+        }
+</script> -->
+<!-- <script>
+        function loadIntakeQWidget() {
+            // Create and show modal first
+            if (!document.getElementById('booking-modal')) {
+                createBookingModal();
+            }
+            
+            // Show the modal
+            document.getElementById('booking-modal').style.display = 'flex';
+            
+            // Load IntakeQ widget with proper initialization
+            if (!window.intakeqLoaded) {
+                window.intakeq = "68942b27871e9c0cab101216";
+                var i = document.createElement("script");
+                i.type = "text/javascript";
+                i.async = true;
+                i.src = "https://intakeq.com/js/widget.min.js?1";
+                
+                // Wait for script to load, then initialize
+                i.onload = function() {
+                    // Force IntakeQ to initialize in the modal
+                    setTimeout(function() {
+                        // IntakeQ should auto-initialize, but let's make sure
+                        if (window.IntakeQ && window.IntakeQ.init) {
+                            window.IntakeQ.init();
+                        }
+                    }, 500);
+                };
+                
+                document.head.appendChild(i);
+                window.intakeqLoaded = true;
+            } else {
+                // If already loaded, just reinitialize
+                setTimeout(function() {
+                    if (window.IntakeQ && window.IntakeQ.init) {
+                        window.IntakeQ.init();
+                    }
+                }, 100);
+            }
+        }
+        
+        function createBookingModal() {
+            // Create modal container
+            const modal = document.createElement('div');
+            modal.id = 'booking-modal';
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            modal.style.zIndex = '9999';
+            modal.style.display = 'none';
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+            modal.style.padding = '20px';
+            modal.style.boxSizing = 'border-box';
+            
+            // Create modal content
+            const modalContent = document.createElement('div');
+            modalContent.style.backgroundColor = '#fff';
+            modalContent.style.borderRadius = '12px';
+            modalContent.style.padding = '0';
+            modalContent.style.width = '100%';
+            modalContent.style.maxWidth = '800px';
+            modalContent.style.height = '90vh';
+            modalContent.style.maxHeight = '700px';
+            modalContent.style.overflow = 'hidden';
+            modalContent.style.position = 'relative';
+            modalContent.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
+            
+            // Close button
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '&times;';
+            closeBtn.style.position = 'absolute';
+            closeBtn.style.right = '15px';
+            closeBtn.style.top = '15px';
+            closeBtn.style.border = 'none';
+            closeBtn.style.background = 'rgba(255,255,255,0.9)';
+            closeBtn.style.fontSize = '28px';
+            closeBtn.style.cursor = 'pointer';
+            closeBtn.style.color = '#666';
+            closeBtn.style.width = '40px';
+            closeBtn.style.height = '40px';
+            closeBtn.style.borderRadius = '50%';
+            closeBtn.style.display = 'flex';
+            closeBtn.style.alignItems = 'center';
+            closeBtn.style.justifyContent = 'center';
+            closeBtn.style.zIndex = '10001';
+            closeBtn.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+            closeBtn.onmouseover = function() { this.style.background = '#f0f0f0'; };
+            closeBtn.onmouseout = function() { this.style.background = 'rgba(255,255,255,0.9)'; };
+            closeBtn.onclick = function() {
+                document.getElementById('booking-modal').style.display = 'none';
+            };
+            
+            // IntakeQ container
+            const intakeqDiv = document.createElement('div');
+            intakeqDiv.id = 'intakeq';
+            intakeqDiv.style.width = '100%';
+            intakeqDiv.style.height = '100%';
+            intakeqDiv.style.border = 'none';
+            intakeqDiv.style.borderRadius = '12px';
+            intakeqDiv.style.overflow = 'auto';
+            
+            // Add loading message
+            const loadingMsg = document.createElement('div');
+            loadingMsg.id = 'intakeq-loading';
+            loadingMsg.innerHTML = 'Loading appointment booking system...';
+            loadingMsg.style.textAlign = 'center';
+            loadingMsg.style.padding = '50px';
+            loadingMsg.style.color = '#666';
+            loadingMsg.style.fontSize = '16px';
+            
+            // Add elements to DOM
+            modalContent.appendChild(closeBtn);
+            modalContent.appendChild(loadingMsg);
+            modalContent.appendChild(intakeqDiv);
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+            
+            // Close when clicking outside the modal content
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+            
+            // Remove loading message after IntakeQ loads
+            setTimeout(function() {
+                const loading = document.getElementById('intakeq-loading');
+                if (loading) {
+                    loading.remove();
+                }
+            }, 3000);
+        }
+</script> -->
+
+<!-- Alternative: Try this simpler approach if the above doesn't work -->
+<script>
+function loadIntakeQWidget() {
+    // Remove any existing modal
+    const existingModal = document.getElementById('booking-modal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+    
+    // Create new modal with IntakeQ
+    const modal = document.createElement('div');
+    modal.id = 'booking-modal';
+    modal.innerHTML = `
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; display: flex; justify-content: center; align-items: center; padding: 20px;">
+            <div style="background: white; border-radius: 12px; width: 100%; max-width: 800px; height: 90vh; max-height: 700px; position: relative; overflow: hidden;">
+                <button onclick="document.getElementById('booking-modal').remove()" style="position: absolute; right: 15px; top: 15px; border: none; background: rgba(255,255,255,0.9); font-size: 28px; cursor: pointer; color: #666; width: 40px; height: 40px; border-radius: 50%; z-index: 10001;">&times;</button>
+                <div id="intakeq" style="width: 100%; height: 100%;"></div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    
+    // Load IntakeQ script
+    if (!window.intakeqLoaded) {
+        window.intakeq = "68942b27871e9c0cab101216";
+        const script = document.createElement("script");
+        script.src = "https://intakeq.com/js/widget.min.js?1";
+        script.async = true;
+        document.head.appendChild(script);
+        window.intakeqLoaded = true;
+    }
+}
+</script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Pink White Minimalist Modern Women's Club Logo (2) (1).png" alt="Beulah Women's Health Logo" class="logo-image">
+                <span class="xpress">Beulah </span>
+                <span class="care4less">Women's Health </span>
+            </div>
+            <div class="nav-items">
+                <!-- <span class="phone">📞 813-328-2779</span> -->
+                <button class="book-btn">Book Now!</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Be seen, be heard, be cared for</h1>
+                <p>We provide personalized care for women with PCOS and reproductive needs using faith-based and science-backed solutions.</p>
+                <div class="hero-image">
+                    <img src="image1.webp" alt="">
+                </div>
+            </div>
+            <div class="newsletter-box">
+                <h2>Get the Latest News and Offers from Beulah Women's Health</h2>
+                <input type="text" placeholder="Enter your full name">
+                <input type="email" placeholder="Enter your email address">
+                <button class="subscribe-btn">Subscribe Now!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <path d="M0,40 C200,10 400,70 600,40 C800,10 1000,70 1200,40 L1200,80 L0,80 Z" fill="var(--bg-light)">
+            </path>
+        </svg>
+    </div>
+
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="welcome-container">
+            <div class="logo-section">
+            <div class="welcome-logo-icon" style="width: 250px; height: 250px; border-radius: 50%;">
+                    <img src="logo.jpg" alt="" style="width: 100%; height: 100%; border-radius: 50%;">
+                </div>
+                <div class="logo-text">
+                    <div class="xpress">Beulah </div>
+                    <div class="care4less">Women's Health</div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="welcome-label">Welcome to Beulah Women's Health</div>
+                <h2>Hello there!</h2>
+                <div class="title-underline"></div>
+                <p>
+                    Visiting the Doctor has never been easier! Here at Beulah Women's Health we provide women's health and
+                    urgent care services 24/7, from the comfort of your own home. Our team of Board-Certified
+                    Practitioners strive to provide professional, highly effective, and affordable health care to
+                    everyone.
+                    Together, we will compose a plan of care uniquely designed for you based on your concerns, desires
+                    and goals. We are a one-stop shop! Our providers diagnose, treat, and prescribe medication when
+                    necessary. Schedule a visit with us today, you will not be disappointed!
+                </p>
+                <button class="book-button">Book Now!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider to Care Section -->
+    <div class="wave-divider-care">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <path d="M0,40 C200,10 400,70 600,40 C800,10 1000,70 1200,40 L1200,80 L0,80 Z" fill="url(#gradient1)">
+            </path>
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#ff1995;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ff59ad;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <!-- We Care About You Section -->
+    <section class="care-section">
+        <div class="team-silhouettes">
+            <div class="silhouette"></div>
+            <div class="silhouette"></div>
+            <div class="silhouette"></div>
+            <div class="silhouette"></div>
+            <div class="silhouette"></div>
+        </div>
+        <div class="care-content">
+            <h2>We Care About You!</h2>
+            <p>
+                Your health, your time, our priority! In today's fast-paced world, we bring healthcare to your
+                fingertips. Access quality
+                care anytime, anywhere. It's easy, safe, and secure. Let us support your health journey. <br><br><br><br>
+            </p>
+        </div>
+    </section>
+
+    <!-- Wave Divider from Care Section -->
+    <div class="wave-divider-care-bottom">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <path d="M0,40 C200,10 400,70 600,40 C800,10 1000,70 1200,40 L1200,80 L0,80 Z" fill="var(--white)"></path>
+        </svg>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-header">
+            <h2>Our Services</h2>
+            <div class="services-underline"></div>
+        </div>
+
+        <!-- Urgent Care Visit Card -->
+        <div class="service-card">
+            <div class="service-image-box">
+                <div >
+                <img src="Initial_PCOS_Evaluation-removebg-preview.png" alt="" style="  width: 100%; height: 100% ;transform: scaleX(-1);">
+                </div>
+            </div>
+            <div class="service-content">
+                <h3>Initial PCOS Evaluation 30 minutes — $75</h3>
+                <p>
+                    This is the first step in understanding your body and taking control of your health. During the evaluation, we review your symptoms, medical history, and concerns to create a personalized care plan. Our goal is to provide clarity and direction so you feel supported from day one.
+                </p>
+                <button class="service-book-btn">Book Now!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women's Health Visit Section -->
+    <section class="womens-health-section">
+        <div class="womens-health-container">
+            <div class="womens-health-content">
+                <h2>PCOS Treatment 20 minutes — $75</h2>
+                <p>
+                    Ongoing care is essential for effective PCOS management. In this visit, we track your progress, adjust treatment as needed, and answer any questions you may have. Each session is designed to keep you on track toward better health outcomes.
+                </p>
+                <button class="womens-health-btn">Book Now!</button>
+            </div>
+            <div class="womens-health-image">
+                <img src="image2.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Birth Control Package Section -->
+    <section class="birth-control-section">
+        <div class="package-container">
+            <div class="package-image-container">
+                <img src="front-view-fresh-fruits-with-notepad-white-surface.jpg" style="width: 300px; height: 250px; border-radius: 20%;" alt="Birth Control Package"
+                    onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\' viewBox=\'0 0 300 300\'%3E%3Crect width=\'300\' height=\'300\' fill=\'%236B5B95\'/%3E%3Ctext x=\'50%\' y=\'50%\' font-size=\'18\' text-anchor=\'middle\' fill=\'white\' font-family=\'Arial, sans-serif\'%3EBirth Control Image%3C/text%3E%3C/svg%3E';">
+            </div>
+            <div class="package-content">
+                <h2>PCOS Meal & Workout Plan — $50</h2>
+                <p>
+                    
+
+                <strong> (No video consultation required)</strong>
+                    Lifestyle changes can make a huge difference in managing PCOS symptoms. With this plan, you’ll receive a customized nutrition and fitness guide designed to balance hormones and boost energy. It’s a practical, easy-to-follow resource created just for you.
+
+
+                <button class="birth-control-btn">Book Now!</button>
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Separator -->
+    <!-- <div class="wave-separator">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+            <path fill="#6B5B95"
+                d="M0,50 C150,150 350,-50 500,50 C650,150 850,-50 1000,50 C1150,150 1350,-50 1440,50 V100 H0 Z"></path>
+        </svg>
+    </div> -->
+    <!-- Wave Divider to Care Section -->
+    <div class="wave-separator">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <defs>
+                <!-- Gradient is vertical, from top to bottom -->
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#71599a" stop-opacity="1" />
+                    <stop offset="50%" stop-color="#8251ae" stop-opacity="1" />
+                    <stop offset="100%" stop-color="#9156c0" stop-opacity="1" />
+                </linearGradient>
+            </defs>
+            <path d="M0,40 C200,10 400,70 600,40 C800,10 1000,70 1200,40 L1200,80 L0,80 Z" fill="url(#gradient2)">
+            </path>
+        </svg>
+    </div>
+
+    <!-- PCOS Package Section -->
+    <section class="pcos-section">
+        <div class="package-container reverse">
+            <div class="package-content">
+                <h2>PCOS Membership Pack </h2>
+                <p>
+                    135 first month → 100/month after
+                    Managing PCOS requires consistent care, and our membership makes it simple. You’ll receive ongoing treatment, lifestyle guidance, and unlimited 24/7 support from your provider. With monthly check-ins and private portal access, you’re never alone on your journey.
+
+                </p>
+                <p>
+                    WInitial evaluation + treatment <br>
+                    Personalized meal & workout plan <br>
+                    Monthly check-ins <br>
+                    Unlimited 24/7 messaging <br>
+                    Private portal access
+                </p>
+                <button class="pcos-btn">Book Now!</button>
+            </div>
+            <div class="package-image-container">
+                <div class="package-image">
+                    <img src="image4.webp" alt="PCOS Package"
+                        onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\' viewBox=\'0 0 300 300\'%3E%3Crect width=\'300\' height=\'300\' fill=\'%236B5B95\'/%3E%3Ctext x=\'50%\' y=\'50%\' font-size=\'18\' text-anchor=\'middle\' fill=\'white\' font-family=\'Arial, sans-serif\'%3EPCOS Image%3C/text%3E%3C/svg%3E';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Birth Control Probelm 20 minutes — $75 -->
+    <section class="weight-loss-section">
+        <div class="package-container">
+            <div class="package-image-container">
+                <img src="initial birth  (2).jpg" style="width: 300px; height: 250px; border-radius: 20%;" alt="Weight Loss Package Measuring Tape">
+            </div>
+            <div class="package-content">
+                <h2> Initial Birth Control Consultation 30 minutes — $75  </h2>
+                <p>
+                    Finding the right birth control should feel empowering, not overwhelming. In this consultation, we’ll discuss your lifestyle, preferences, and health to determine the safest and most effective method for you. Together, we’ll create a plan that fits seamlessly into your life.
+                    
+
+                    
+<br>
+                </p>
+                <!-- <p>
+                    But that's not all - we go the extra mile! You'll benefit from comprehensive initial lab work,
+                    personalized meal plans that cater to your unique needs, and enjoy weekly check-ins, ensuring you
+                    stay on track and motivated every step of the way.
+                </p> -->
+                <!-- <p>
+                    As a token of our gratitude, receive a special welcome gift on us. Plus, enjoy a fantastic 20%
+                    discount on B12 and Lipo C injections – the perfect complement to your weight loss journey.
+                </p>
+                <p>
+                    What sets us apart? Your journey is our priority. With unlimited messaging support available 24/7,
+                    our expert team is just a message away, providing the guidance, motivation, and encouragement
+                    you need, whenever you need it.
+                </p> -->
+                <button class="weight-loss-btn">Book Now!</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="wave-separator">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <defs>
+                <!-- Gradient is vertical, from top to bottom -->
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#71599a" stop-opacity="1" />
+                    <stop offset="50%" stop-color="#8251ae" stop-opacity="1" />
+                    <stop offset="100%" stop-color="#9156c0" stop-opacity="1" />
+                </linearGradient>
+            </defs>
+            <path d="M0,40 C200,10 400,70 600,40 C800,10 1000,70 1200,40 L1200,80 L0,80 Z" fill="url(#gradient2)">
+            </path>
+        </svg>
+    </div>
+
+
+
+    <!-- Birth Control Refill -->
+    <section class="weight-loss-package-section">
+        <div class="package-container reverse">
+            <div class="package-content">
+                <h2>Initial Birth Control Refill — $40</h2>
+                <p>
+                    <strong>(No video consultation required) </strong>
+                    Never stress about running out of your prescription again. With our quick refill option, you’ll get the protection you need without the hassle of scheduling a call. It’s simple, reliable, and built for your convenience.
+
+
+
+
+
+
+                </p>
+            
+                <button class="weight-loss-package-btn">Book Now!</button>
+            </div>
+            <div class="package-image-container">
+                <img src="image3.webp"  alt="Weight Loss Package Measuring Tape">
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- <section class="womens-health-section" style=" background-color: rgba(255, 255, 255, 0.9)">
+        <div class="womens-health-container" >
+            <div class="womens-health-content">
+                <h2>PCOS Treatment 20 minutes — $75</h2>
+                <p>
+                    Ongoing care is essential for effective PCOS management. In this visit, we track your progress, adjust treatment as needed, and answer any questions you may have. Each session is designed to keep you on track toward better health outcomes.
+                </p>
+                <button class="womens-health-btn">Book Now!</button>
+            </div>
+            <div class="womens-health-image">
+                <img src="image2.webp" alt="">
+            </div>
+        </div>
+    </section> -->
+
+
+    
+    <section class="birth-control-section">
+        <div class="package-container">
+            <div class="package-image-container">
+                <img src="Contraceptive Implant.jpeg" style="width: 300px; height: 250px; border-radius: 20%;" alt="Birth Control Package"
+                    onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\' viewBox=\'0 0 300 300\'%3E%3Crect width=\'300\' height=\'300\' fill=\'%236B5B95\'/%3E%3Ctext x=\'50%\' y=\'50%\' font-size=\'18\' text-anchor=\'middle\' fill=\'white\' font-family=\'Arial, sans-serif\'%3EBirth Control Image%3C/text%3E%3C/svg%3E';">
+            </div>
+            <div class="package-content">
+                <h2>Contraceptive Implant (Home Visit)</h2>
+                <p>
+                    
+                    Take control of your birth control without the stress of a clinic visit. Our licensed providers come directly to your home to safely insert, remove, or replace your contraceptive implant. Whether you’re getting one for the first time, switching methods, or simply renewing, the process is comfortable, discreet, and designed around your schedule. This service ensures you have continuous protection, personalized support, and complete peace of mind—all in the convenience of your own space. <br>
+                    <strong> Insertion:</strong> <br>
+                    30 minutes — $200
+                    Professional at-home contraceptive implant insertion. <br>
+                    <strong> Removal:</strong> <br>
+                    30 minutes — $200
+                    Safe removal of your implant in the comfort of your home. <br>
+                    <strong> Removal & Re-Insertion:</strong> <br>
+                    35 minutes — $250
+                    Replace your implant in one seamless visit. <br>
+                    <strong> Removal & Switch to New Method:</strong> <br>
+                    45 minutes — $245
+                    Transition smoothly to a new contraceptive method.
+                    
+
+                    
+
+
+                </p>
+                <button class="birth-control-btn">Book Now!</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <!-- demo section for Only copy  -->
+    <!-- <section class="weight-loss-package-section">
+        <div class="package-container reverse">
+            <div class="package-content">
+                <h2> Initial Birth Control Consultation 30 minutes — $75 </h2>
+                <p>
+                    Finding the right birth control should feel empowering, not overwhelming. In this consultation, we’ll discuss your lifestyle, preferences, and health to determine the safest and most effective method for you. Together, we’ll create a plan that fits seamlessly into your life.
+
+
+
+
+
+
+                </p>
+            
+                <button class="weight-loss-package-btn">Book Now!</button>
+            </div>
+            <div class="package-image-container">
+                <img src="initial birth  (2).jpg" style="width: 300px; height: 250px; border-radius: 20%;" alt="Weight Loss Package Measuring Tape">
+            </div>
+        </div>
+    </section> -->
+
+<!-- PCOS Meal & Workout Plan — $50  -->
+    <!-- <section class="birth-control-section">
+        
+    </section>  -->
+
+
+
+
+
+<section class="weight-loss-package-section">
+        <div class="package-container reverse">
+            <div class="package-content">
+                <h2>Lab Only (Home Visit) — $30</h2>
+                <p>
+                <strong> (No video consultation required)</strong> 
+                Sometimes you just need quick results without the extra steps. Our lab-only option provides fast, reliable testing when you need it most. Skip the video visit and get the answers you need right away.
+                </p>
+                
+                <button class="weight-loss-package-btn">Book Now!</button>
+            </div>
+            <div class="package-image-container">
+                <img src="Lab Only.jpeg" style="width: 300px; height: 250px; border-radius: 20%;" alt="Weight Loss Package Measuring Tape">
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-- Wave Divider from Care Section -->
+    <div class="wave-divider-care-bottom2">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <path d="M0,40 C200,10 400,70 600,40 C800,10 1000,70 1200,40 L1200,80 L0,80 Z" fill="var(--white)"></path>
+        </svg>
+    </div>
+
+
+
+    <section class="birth-control-section">
+        <div class="package-container">
+            <div class="package-image-container">
+                <img src="initial birth  (1).jpg" style="width: 300px; height: 250px; border-radius: 20%;" alt="Birth Control Package"
+                    onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\' viewBox=\'0 0 300 300\'%3E%3Crect width=\'300\' height=\'300\' fill=\'%236B5B95\'/%3E%3Ctext x=\'50%\' y=\'50%\' font-size=\'18\' text-anchor=\'middle\' fill=\'white\' font-family=\'Arial, sans-serif\'%3EBirth Control Image%3C/text%3E%3C/svg%3E';">
+            </div>
+            <div class="package-content">
+                <h2>Birth Control Membership Pack </h2>
+                <p>
+                    
+                    <p>
+                    
+
+                        $125 first month → $85/month after
+                        Get everything you need for ongoing birth control management in one affordable plan. From your initial consult to monthly check-ins and unlimited messaging, you’ll have constant support. We make birth control simple, stress-free, and personalized for you.
+
+                        <br> <br>
+                        Initial video consultation <br>
+                        3-month prescription (EC upon request) <br>
+                        Monthly check-ins<br>
+                        Unlimited 24/7 messaging<br>
+                        Private portal access
+
+
+                </p>
+                    
+                    
+                    
+
+
+                
+        <button class="birth-control-btn">Book Now!</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- If you are not ready to commit Section -->
+    <section class="not-ready-section " style="margin-top: 5rem;">
+        <div class="not-ready-container">
+            <!-- <div class="number-circle">1</div> -->
+            <div class="not-ready-content">
+                <h2>What You Can Expect?</h2>
+                <p>
+                    
+                    ● Period regulation and balanced cycles <br>
+                    ● Reduced or absent unwanted hair growth (hypotrichosis) <br>
+                    ● Healthy weight, fertility, pregnancy, and family planning <br>
+                    ● Sustainable, healthy lifestyle support <br>
+                    ● Faith-based and evidence-based care, backed by science <br>
+                    ● Thorough evaluations and personalized treatment plans <br>
+                    ● Secure direct messaging with your provider <br>
+                    ● Flexible options: insurance or cash pay, home visits, and video visits
+                </p>
+                <button class="not-ready-btn">Book Now!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Practice Section -->
+    <!-- <section class="virtual-practice-section">
+        <div class="virtual-practice-card">
+            <p>
+                At Xpress Care4less, your well-being is our top priority. We pledge to treat every patient with the
+                utmost dignity, respect, and
+                compassion. We understand that your healthcare decisions are deeply personal, and that's why we take the
+                time to truly listen. When
+                you choose Xpress Care4less, you're not just a patient – you're a valued individual whose concerns and
+                feelings matter. Experience
+                healthcare that goes beyond prescriptions and procedures: experience care that honors you. Your journey
+                to health begins with us –
+                where your voice is heard and your choices are respected.
+            </p>
+
+            <h2>OUR PRACTICE IS 100% VIRTUAL AND WE HELP<br>PATIENTS FROM THE FOLLOWING STATES</h2>
+            <div class="states-list">AZ, CO, DE, FL, KS, MI, NM, NV, OR, TX, UT</div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <h2>Testimonials</h2>
+            <div class="title-underline"></div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-slides">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-cards">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial-card purple">
+                                <div class="stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    This was the best experience I have had receiving gynecological care. Dr. O. was phenomenal. She is very caring and very knowledgeable.
+                                </p>
+                                <div class="client-info">- Sarah </div>
+                                <div class="quote-mark">❞</div>
+                            </div>
+                            
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial-card pink">
+                                <div class="stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    “She was incredibly kind and compassionate, taking the time to truly listen to all of my concerns. She explained each step of the process clearly and thoroughly, making sure I felt comfortable and informed throughout the entire visit.
+                                </p>
+                                <div class="client-info">- Jennifer </div>
+                                <div class="quote-mark">❞</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-cards">
+                            <!-- Testimonial 3 -->
+                            <div class="testimonial-card pink">
+                                <div class="stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    The PCOS Package has been life-changing for me. My provider listened to all my symptoms and created a personalized plan that actually works. Within just a few weeks.
+                                </p>
+                                <div class="client-info">- Fareda </div>
+                                <div class="quote-mark">❞</div>
+                            </div>
+                            
+                            <!-- Testimonial 4 -->
+                            <div class="testimonial-card purple">
+                                <div class="stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    I really appreciated how patient and understanding she was. She walked me through the entire process step by step, explaining things in a way that was easy to follow.
+                                </p>
+                                <div class="client-info">- Rachel </div>
+                                <div class="quote-mark">❞</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-cards">
+                            <!-- Testimonial 5 -->
+                            <div class="testimonial-card purple">
+                                <div class="stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    The birth control consultation was detailed and very helpful. My provider carefully reviewed all of my options and made sure to answer each of my questions without ever making me feel rushed. I really appreciate the subscription model.
+                                </p>
+                                <div class="client-info">- Alexandra </div>
+                                <div class="quote-mark">❞</div>
+                            </div>
+                            
+                            <!-- Testimonial 6 -->
+                            <div class="testimonial-card pink">
+                                <div class="stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    She was so kind and caring, and I truly felt heard throughout my visit. She listened attentively to all of my concerns without rushing me, She explained every step of the process in a way that was clear and easy to understand, showing professionalism.
+                                </p>
+                                <div class="client-info">- Maria </div>
+                                <div class="quote-mark">❞</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Dots -->
+                <div class="testimonial-dots">
+                    <!-- Dots will be created by JavaScript -->
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="testimonial-arrow prev">❮</button>
+                <button class="testimonial-arrow next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Profile Section Start -->
+    <section class="doctor-profile" id="doctor-profile">
+        <div class="container">
+            <div class="doctor-profile-container">
+                <div class="doctor-image">
+                    <img src="profile.webp" alt="Dr. Hephzibah Tillery" class="profile-img">
+                </div>
+                <div class="doctor-info">
+                    <h2>Dr. Obot Tigah</h2>
+                    <div class="doctor-credentials">
+                        <span> DNP, WHNP-BC, Nursey/NICU RN,RN</span>
+                    </div>
+                    <div class="doctor-bio">
+                        <p>With over 10 years of dedicated experience in women’s health, I bring a strong background across both inpatient and outpatient care. For the past 2 years, I have been practicing as a Doctor of Nursing Practice (DNP) and Board-Certified Women’s Health Nurse Practitioner (WHNP-BC) in the outpatient setting, providing comprehensive care and personalized treatment plans. Prior to this, I spent 8 years in inpatient roles, serving as a Postpartum, Nursery/NICU Registered Nurse, and Perinatal Home Care RN. This diverse clinical experience has equipped me with a deep understanding of women’s health needs across the continuum of care — from pregnancy and postpartum to long-term wellness and preventative health.</p>
+                    </div>
+                    <div class="doctor-cta">
+                        <button class="work-with-me-btn"  style="color: var(--dark);">Work With Me!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Doctor Profile Section End -->
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="title-underline"></div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How does care at Beulah Women’s Health work?</div>
+                <div class="faq-answer">
+                    <p>Our process is simple and designed to make care accessible:
+
+                    Choose your plan. Select a membership subscription that fits your needs. Not ready for a membership? You can start with a PCOS evaluation or an initial birth control consultation (starting at $75).
+
+                    Schedule your appointment. Click the “Book Now” button to schedule a visit with one of our providers. You’ll receive an email confirmation along with a link to register in the patient portal and complete your intake form.
+
+                    Start your health journey. Begin your journey with care that is both faith-based and evidence-based, supported by personalized treatment and ongoing wellness guidance.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do you offer home visits?</div>
+                <div class="faq-answer">
+                    <p>Yes. At this time, we provide home visits for contraceptive implant procedures only.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What states do you currently serve?</div>
+                <div class="faq-answer">
+                    <p>We currently serve Pennsylvania (PA) and Delaware (DE), with additional states coming soon — stay tuned.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"> Do you accept insurance?</div>
+                <div class="faq-answer">
+                    <p>Yes. We accept Cigna, Highmark BlueShield, and Medicare. We also accept all major credit/debit cards, FSA/HSA, and PayPal.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How should I prepare for my initial evaluation or consultation?</div>
+                <div class="faq-answer">
+                    <p>Complete all intake forms ahead of your appointment.
+
+Weigh yourself on a home scale (without shoes or heavy clothing).
+
+Take a home blood pressure (BP) reading.
+
+Upload or have your photo ID ready at the time of your visit.
+
+Join your appointment using any camera-enabled phone, tablet, or computer.</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Contact us!</h2>
+            
+            <div class="contact-info">
+                
+                <a href="ahmed@scalingeasy.com" class="email-link">
+                    <i class="email-icon"></i>
+                    ahmed@scalingeasy.com
+                </a>
+            </div>
+            
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/obtigah@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="services">What services are you interested in?</label>
+                    <input type="text" id="services" name="services" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <!-- FormSubmit.co configuration -->
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New XpressCare Contact Request">
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    
+    
+
+<!-- Contact Us Section -->
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="Pink White Minimalist Modern Women's Club Logo (2) (1).png" style=" border-radius: 50%;" alt="XpressCare4Less Logo">
+        </div>
+        <div class="copyright">
+        © 2025 Beulah Women's Health. All RIghts Reserved. Social Media Handles
+        </div>
+    </div>
+</footer>
+
+<script src="faq.js"></script>
+<script src="testimonials.js"></script>
+<script>
+    // Add event listener for Work With Me button
+    document.addEventListener('DOMContentLoaded', function() {
+        const workWithMeBtn = document.querySelector('.work-with-me-btn');
+        if (workWithMeBtn) {
+            workWithMeBtn.addEventListener('click', function() {
+                loadIntakeQWidget();
+            });
+        }
+    });
+</script>
+<script>
+    // Add booking functionality with IntakeQ
+    document.querySelectorAll('.book-btn, .book-button, .service-book-btn, .womens-health-btn, .birth-control-btn, .pcos-btn, .weight-loss-btn, .weight-loss-package-btn, .not-ready-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            loadIntakeQWidget();
+        });
+
+        // Add subscribe functionality
+        document.querySelector('.subscribe-btn').addEventListener('click', () => {
+            const name = document.querySelector('input[type="text"]').value;
+            const email = document.querySelector('input[type="email"]').value;
+            
+            if (name && email) {
+                alert(`Thank you for subscribing, ${name}! We'll send updates to ${email}`);
+                document.querySelector('input[type="text"]').value = '';
+                document.querySelector('input[type="email"]').value = '';
+            } else {
+                alert('Please fill in all fields');
+            }
+        });
+        
+        // FormSubmit will handle the submission automatically
+        // This is just for additional client-side validation if needed
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            // Let the form submit naturally to FormSubmit.co
+            // No e.preventDefault() so the form will actually submit
+            
+            const firstName = document.getElementById('firstName').value;
+            
+            // Show a quick feedback message before form submits
+            if (firstName) {
+                console.log(`Sending message from ${firstName} to obtigah@gmail.com`);
+            }
+            
+            // Form will submit to FormSubmit.co and redirect to thank-you page
+        });
+
+        // Add parallax effect
+    });
+    </script>
+</body>
+
+</html>
