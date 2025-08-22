@@ -373,25 +373,23 @@ function loadIntakeQWidget() {
     //     window.intakeqLoaded = true;
     // }
     // Alternative simpler approach - try this if the above doesn't work
-function loadIntakeQWidgetSimple() {
-    // Check if IntakeQ ID is correct
+// Open IntakeQ booking page in a new window/tab
     const INTAKEQ_ID = "68942b27871e9c0cab101216";
+    const bookingUrl = `https://intakeq.com/booking/${INTAKEQ_ID}`;
     
-    // Create modal
-    const modal = document.createElement('div');
-    modal.innerHTML = `
-        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; display: flex; justify-content: center; align-items: center; padding: 20px;">
-            <div style="background: white; border-radius: 12px; width: 100%; max-width: 800px; height: 90vh; position: relative;">
-                <button onclick="this.closest('div').parentElement.remove()" style="position: absolute; right: 15px; top: 15px; border: none; background: #f0f0f0; font-size: 20px; cursor: pointer; padding: 5px 10px; border-radius: 5px; z-index: 10001;">&times;</button>
-                <iframe src="https://intakeq.com/booking/${INTAKEQ_ID}" style="width: 100%; height: 100%; border: none; border-radius: 12px;"></iframe>
-            </div>
-        </div>
-    `;
-    document.body.appendChild(modal);
-}
-
-// Call function to load IntakeQWidget
-loadIntakeQWidgetSimple();
+    // Open in new window with specific dimensions (optional)
+    const newWindow = window.open(
+        bookingUrl, 
+        'IntakeQBooking', 
+        'width=800,height=700,scrollbars=yes,resizable=yes,toolbar=no,menubar=no,location=no'
+    );
+    
+    // Check if popup was blocked
+    if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+        // Popup blocked, fallback to opening in new tab
+        window.open(bookingUrl, '_blank');
+    }
+    
 }
 </script>
 
